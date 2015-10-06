@@ -1,0 +1,221 @@
+<div class="modal-content">
+	<div class="modal-header my-modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="modal_close()"></button>
+		<h4 class="modal-title"><b><i class="icon-note"></i> Patient Details</b></h4>
+	</div>
+	<div class="modal-body">
+		<div class="tabbable">
+			<ul class="nav nav-tabs nav-tabs-lg">
+				<li  class="active">
+					<a href="index.html#basic_info" data-toggle="tab" aria-expanded="true">General</a>
+				</li>
+				<li class="">
+					<a href="index.html#contact" data-toggle="tab" aria-expanded="false">Contact</a>
+				</li>
+				<li class="">
+					<a href="index.html#detail_info" data-toggle="tab" aria-expanded="false">Detail_info</a>
+				</li>
+				<li class="">
+					<a href="index.html#more_info" data-toggle="tab" aria-expanded="false">More info</a>
+				</li>
+			</ul>
+		</div>
+		<div class="tab-content">
+			<div class="tab-pane active" id="basic_info">
+				<div class="row">
+					<div class="col-md-3">
+						<h4><b>Avatar</b></h4>
+						<div class="fileinput fileinput-new" data-provides="fileinput">
+							<div class="fileinput-new thumbnail" style="width: 100%; height: 150px;">
+								<img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt=""/>
+							</div>
+							<div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 100%; max-height: 150px;">
+							</div>
+							<div>
+								<span class="btn default btn-file">
+								<span class="fileinput-new">
+								Select image </span>
+								<span class="fileinput-exists">
+								Change </span>
+								<input type="file" name="...">
+								</span>
+								<a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput">
+								Remove </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<h4><b>Medicare</b></h4>
+						<div class="form-group">
+							<label class="label-control">Ref No.</label>
+							<input type="text" class="form-control" placeholder="Ref No.">
+						</div>
+						<div class="form-group">
+							<label class="label-control">Medicare Number</label>
+							<input type="text" class="form-control" placeholder="Medicare Number">
+						</div>
+						<div class="form-group">
+							<label class="label-control">Medicare Expire</label>
+							<input type="text" class="form-control" placeholder="Medicare Expire">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<h4><b>Personal</b></h4>
+						<div class="row">
+							<!-- begin Title -->
+							<div class="col-md-3">
+								<div class="form-group">
+									<label class="label-control">Title</label>
+									<select class="form-control">
+										<option value="mr">Mr</option>
+										<option value="mrs">Mrs</option>
+										<option value="ms">Ms</option>
+										<option value="dr">Dr</option>
+										<option value="master">Master</option>
+										<option value="phd">Phd</option>
+									</select>
+								</div>
+							</div>
+							<!-- end Title -->
+						</div>
+						<div class="row">
+							<!-- begin Firstname -->	
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="label-control">First Name</label>
+									<input type="text" class="form-control" placeholder="First Name">
+								</div>
+							</div>
+							<!-- end Firstname -->
+							<!-- begin Surname -->
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="label-control">Sur Name</label>
+									<input type="text" class="form-control" placeholder="Sur Name">
+								</div>
+							</div>
+							<!-- end Surname -->
+							
+						</div>
+						<div class="row">
+							<!-- begin Middle Name -->
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="label-control">Middle Name</label>
+									<input type="text" class="form-control" placeholder="Middle Name">
+								</div>
+							</div>
+							<!-- end Middle Name -->
+							<!-- begin Know As -->
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="label-control">Know As</label>
+									<input type="text" class="form-control" placeholder="Know As">
+								</div>
+							</div>
+							<!-- end Know As -->
+						</div>
+						<div class="row">
+							<!-- begin Gender -->
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="label-control">Gender</label>
+									<div class="form-control">
+										<label><input type="radio" name="gender" value="male"> Male</label>
+										&nbsp;&nbsp;
+										<label><input type="radio" name="gender" value="female"> Female</label>
+									</div>
+								</div>
+							</div>
+							<!-- end Gender -->
+							<!-- begin DOB -->
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="label-control">Date of Birth</label>
+									<input type="date" placeholder="DOB" class="form-control" value="01/01/2015">
+								</div>
+							</div>
+							<!-- end DOB -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane" id="contact">
+				<div class="row">
+					<!-- begin email -->
+					<div class="col-md-3">
+						<!-- <h4><b>Email</b></h4> -->
+						<div class="form-group">
+							<label class="label-control"><b>Email</b></label>
+							<input type="text" placeholder="email" class="form-control">
+						</div>
+					</div>
+					<!-- end email -->
+					<div class="col-md-9">
+						<div class="row">
+							<!-- <h4><b>Telephone</b></h4> -->
+							<!-- begin WorkPhone -->
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class="label-control"><b>Telephone</b></label>
+									<input type="text" placeholder="Work Phone" class="form-control">
+								</div>
+							</div>
+							<!-- end WorkPhone -->
+							<!-- begin HomePhone -->
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class="label-control">Home</label>
+									<input type="text" placeholder="Home Phone" class="form-control">
+								</div>
+							</div>
+							<!-- end HomePhone -->
+							<!-- begin MobilePhone -->
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class="label-control">Mobile</label>
+									<input type="text" placeholder="Mobile Phone" class="form-control">
+								</div>
+							</div>
+							<!-- end MobilePhone -->
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<!-- begin Occupation -->
+					<div class="col-md-3">
+						<div class="form-group">
+							<label class="label-control"><b>Occupation</b></label>
+							<input type="text" placeholder="Occupation" class="form-control">
+						</div>
+					</div>
+					<!-- end Occupation -->
+					<!-- begin Address1 -->
+					<div class="col-md-4">
+						<div class="form-group">
+							<label class="label-control">Address 1</label>
+							<input type="text" placeholder="Address 1" class="form-control">
+						</div>
+					</div>
+					<!-- end Address1 -->
+					<!-- begin Address 2 -->
+					<div class="col-md-4">
+						<div class="form-group">
+							<label class="label-control">Address 2</label>
+							<input type="text" placeholder="Address 2" class="form-control">
+						</div>
+					</div>
+					<!-- end Address 2 -->
+				</div>
+			</div>
+			<div class="tab-pane" id="detail_info">
+			</div>
+			<div class="tab-pane" id="more_info">
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn default" data-dismiss="modal" ng-click="close()"><i class="icon-action-undo"></i> Close</button>
+		<button type="button" class="btn blue"><i class="glyphicon glyphicon-save"></i> Save changes</button>
+	</div>
+</div>
